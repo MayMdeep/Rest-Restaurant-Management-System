@@ -19,31 +19,31 @@ interface HomePageProps {
 
 export function HomePage({ onNavigate }: HomePageProps) {
   const featuredDishes = [
-    {
-      id: 1,
-      name: "Grilled Salmon",
-      description: "Fresh Atlantic salmon with herbs",
-      price: 28.99,
-      rating: 4.8,
-      image: "https://images.unsplash.com/photo-1723744895523-75a5b52de0eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZm9vZCUyMGRpc2hlc3xlbnwxfHx8fDE3NTg2NDc1MjN8MA&ixlib=rb-4.1.0&q=80&w=400"
-    },
-    {
-      id: 2,
-      name: "Truffle Pasta",
-      description: "Handmade pasta with black truffle",
-      price: 32.99,
-      rating: 4.9,
-      image: "https://images.unsplash.com/photo-1723744895523-75a5b52de0eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZm9vZCUyMGRpc2hlc3xlbnwxfHx8fDE3NTg2NDc1MjN8MA&ixlib=rb-4.1.0&q=80&w=400"
-    },
-    {
-      id: 3,
-      name: "Wagyu Steak",
-      description: "Premium wagyu with seasonal vegetables",
-      price: 65.99,
-      rating: 5.0,
-      image: "https://images.unsplash.com/photo-1723744895523-75a5b52de0eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZm9vZCUyMGRpc2hlc3xlbnwxfHx8fDE3NTg2NDc1MjN8MA&ixlib=rb-4.1.0&q=80&w=400"
-    }
-  ];
+  {
+    id: 1,
+    name: "Grilled Salmon",
+    description: "Fresh Atlantic salmon with herbs",
+    price: 28.99,
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    id: 2,
+    name: "Truffle Pasta",
+    description: "Handmade pasta with black truffle",
+    price: 32.99,
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=400&q=80"
+  },
+  {
+    id: 3,
+    name: "Wagyu Steak",
+    description: "Premium wagyu with seasonal vegetables",
+    price: 65.99,
+    rating: 5.0,
+"image": "https://images.unsplash.com/photo-1546964124-0cce460f38ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"  }
+];
+
 
   const stats = [
     { icon: Award, label: "Awards Won", value: "15+" },
@@ -57,8 +57,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* Hero Section */}
       <section className="relative h-[600px] rounded-3xl overflow-hidden">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1669131196140-49591336b13e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjByZXN0YXVyYW50JTIwaW50ZXJpb3J8ZW58MXx8fHwxNzU4NjEzMDM4fDA&ixlib=rb-4.1.0&q=80&w=1080"
-          alt="Restaurant Interior"
+  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"          alt="Restaurant Interior"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30" />
@@ -80,13 +79,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
               <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-black"
-                onClick={() => onNavigate('reservations')}
-              >
-                Make Reservation
-              </Button>
+  size="lg" 
+  variant="outline" 
+  className="bg-gradient-teal-orange hover:opacity-90 transition-opacity text-white"
+  onClick={() => onNavigate('reservations')}
+>
+  Make Reservation
+</Button>
             </div>
           </div>
         </div>
@@ -161,50 +160,50 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </div>
         </section>
 
-        {/* Restaurant Info */}
-        <section className="bg-gradient-to-r from-teal/10 to-orange/10 rounded-3xl p-8">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold">About Resty</h2>
-              <p className="text-muted-foreground">
-                Founded in 2020, Resty has been serving exceptional cuisine that combines traditional flavors 
-                with modern culinary techniques. Our commitment to quality and innovation has earned us 
-                recognition as one of the city's premier dining destinations.
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <Clock className="w-5 h-5 text-primary" />
-                  <span>Mon-Sun: 11:00 AM - 11:00 PM</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <MapPin className="w-5 h-5 text-primary" />
-                  <span>123 Culinary Street, Food District</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-primary" />
-                  <span>+1 (555) 123-RESTY</span>
-                </div>
-              </div>
-            </div>
-            <div className="space-y-4">
-              <Button 
-                size="lg" 
-                className="w-full bg-gradient-teal-orange"
-                onClick={() => onNavigate('reservations')}
-              >
-                Reserve a Table
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="w-full"
-                onClick={() => onNavigate('menu')}
-              >
-                Order Online
-              </Button>
-            </div>
-          </div>
-        </section>
+       {/* Restaurant Info */}
+<section className="bg-gradient-to-r from-teal/10 to-orange/10 rounded-3xl p-8">
+  <div className="grid md:grid-cols-2 gap-8 items-center">
+    <div className="space-y-6">
+      <h2 className="text-3xl font-bold text-foreground">About Resty</h2>
+      <p className="text-muted-foreground leading-relaxed">
+        Founded in 2020, Resty has been serving exceptional cuisine that combines traditional flavors 
+        with modern culinary techniques. Our commitment to quality and innovation has earned us 
+        recognition as one of the city's premier dining destinations.
+      </p>
+      <div className="space-y-4">
+        <div className="flex items-center space-x-3 text-foreground">
+          <Clock className="w-5 h-5 text-primary flex-shrink-0" />
+          <span>Mon-Sun: 11:00 AM - 11:00 PM</span>
+        </div>
+        <div className="flex items-center space-x-3 text-foreground">
+          <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
+          <span>123 Culinary Street, Food District</span>
+        </div>
+        <div className="flex items-center space-x-3 text-foreground">
+          <Phone className="w-5 h-5 text-primary flex-shrink-0" />
+          <span>+1 (555) 123-RESTY</span>
+        </div>
+      </div>
+    </div>
+    <div className="space-y-4">
+<Button 
+  size="lg" 
+  className="w-full border-2 border-green-600 bg-green-600 text-black font-semibold"
+  onClick={() => onNavigate('reservations')}
+>
+  Reserve a Table
+</Button>
+      <Button 
+        size="lg" 
+        variant="outline" 
+        className="w-full border-2 border-primary bg-primary text-white font-semibold"
+        onClick={() => onNavigate('menu')}
+      >
+        Order Online
+      </Button>
+    </div>
+  </div>
+</section>
       </div>
     </div>
   );

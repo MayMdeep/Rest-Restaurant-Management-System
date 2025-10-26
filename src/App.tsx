@@ -10,6 +10,11 @@ import { OrderTrackingPage } from "./components/customer/OrderTrackingPage";
 import { DashboardPage } from "./components/admin/DashboardPage";
 import { OrdersManagementPage } from "./components/admin/OrdersManagementPage";
 import { ChatManagementPage } from "./components/admin/ChatManagementPage";
+import { MenuManagementPage } from "./components/admin/MenuManagementPage";
+import { TableManagementPage } from "./components/admin/TableManagementPage";
+import { InventoryManagementPage } from "./components/admin/InventoryManagementPage";
+import { ReportsPage } from "./components/admin/ReportsPage";
+import { StaffManagementPage } from "./components/admin/StaffManagementPage";
 import { 
   User, 
   Shield, 
@@ -193,63 +198,28 @@ export default function App() {
 
   // Admin Interface
   if (currentInterface === "admin") {
-    const renderAdminPage = () => {
-      switch (adminPage) {
-        case "dashboard":
-          return <DashboardPage />;
-        case "orders":
-          return <OrdersManagementPage />;
-        case "chat":
-          return <ChatManagementPage />;
-        case "menu-management":
-          return (
-            <Card>
-              <CardContent className="p-8 text-center">
-                <h2 className="text-2xl font-bold mb-4">Menu Management</h2>
-                <p className="text-muted-foreground">Menu management functionality coming soon...</p>
-              </CardContent>
-            </Card>
-          );
-        case "tables":
-          return (
-            <Card>
-              <CardContent className="p-8 text-center">
-                <h2 className="text-2xl font-bold mb-4">Table Management</h2>
-                <p className="text-muted-foreground">Table management functionality coming soon...</p>
-              </CardContent>
-            </Card>
-          );
-        case "inventory":
-          return (
-            <Card>
-              <CardContent className="p-8 text-center">
-                <h2 className="text-2xl font-bold mb-4">Inventory Management</h2>
-                <p className="text-muted-foreground">Inventory management functionality coming soon...</p>
-              </CardContent>
-            </Card>
-          );
-        case "reports":
-          return (
-            <Card>
-              <CardContent className="p-8 text-center">
-                <h2 className="text-2xl font-bold mb-4">Reports & Analytics</h2>
-                <p className="text-muted-foreground">Reports functionality coming soon...</p>
-              </CardContent>
-            </Card>
-          );
-        case "staff":
-          return (
-            <Card>
-              <CardContent className="p-8 text-center">
-                <h2 className="text-2xl font-bold mb-4">Staff Management</h2>
-                <p className="text-muted-foreground">Staff management functionality coming soon...</p>
-              </CardContent>
-            </Card>
-          );
-        default:
-          return <DashboardPage />;
-      }
-    };
+  const renderAdminPage = () => {
+  switch (adminPage) {
+    case "dashboard":
+      return <DashboardPage />;
+    case "orders":
+      return <OrdersManagementPage />;
+    case "chat":
+      return <ChatManagementPage />;
+    case "menu-management":
+      return <MenuManagementPage />;
+    case "tables":
+      return <TableManagementPage />;
+    case "inventory":
+      return <InventoryManagementPage />;
+    case "reports":
+      return <ReportsPage />;
+    case "staff":
+      return <StaffManagementPage />;
+    default:
+      return <DashboardPage />;
+  }
+};
 
     return (
       <AdminLayout 

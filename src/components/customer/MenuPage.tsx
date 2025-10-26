@@ -36,7 +36,7 @@ export function MenuPage() {
       price: 28.99,
       category: "mains",
       rating: 4.8,
-      image: "https://images.unsplash.com/photo-1723744895523-75a5b52de0eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZm9vZCUyMGRpc2hlc3xlbnwxfHx8fDE3NTg2NDc1MjN8MA&ixlib=rb-4.1.0&q=80&w=400",
+      image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       available: true,
       dietary: ["healthy"],
       spicy: false
@@ -48,7 +48,7 @@ export function MenuPage() {
       price: 32.99,
       category: "mains",
       rating: 4.9,
-      image: "https://images.unsplash.com/photo-1723744895523-75a5b52de0eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZm9vZCUyMGRpc2hlc3xlbnwxfHx8fDE3NTg2NDc1MjN8MA&ixlib=rb-4.1.0&q=80&w=400",
+      image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       available: true,
       dietary: ["vegetarian"],
       spicy: false
@@ -60,7 +60,7 @@ export function MenuPage() {
       price: 18.99,
       category: "appetizers",
       rating: 4.7,
-      image: "https://images.unsplash.com/photo-1723744895523-75a5b52de0eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZm9vZCUyMGRpc2hlc3xlbnwxfHx8fDE3NTg2NDc1MjN8MA&ixlib=rb-4.1.0&q=80&w=400",
+      image: "https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       available: true,
       dietary: ["healthy"],
       spicy: true
@@ -72,7 +72,7 @@ export function MenuPage() {
       price: 65.99,
       category: "mains",
       rating: 5.0,
-      image: "https://images.unsplash.com/photo-1723744895523-75a5b52de0eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZm9vZCUyMGRpc2hlc3xlbnwxfHx8fDE3NTg2NDc1MjN8MA&ixlib=rb-4.1.0&q=80&w=400",
+      image: "https://images.unsplash.com/photo-1546964124-0cce460f38ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       available: false,
       dietary: [],
       spicy: false
@@ -84,7 +84,7 @@ export function MenuPage() {
       price: 12.99,
       category: "desserts",
       rating: 4.6,
-      image: "https://images.unsplash.com/photo-1723744895523-75a5b52de0eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZm9vZCUyMGRpc2hlc3xlbnwxfHx8fDE3NTg2NDc1MjN8MA&ixlib=rb-4.1.0&q=80&w=400",
+      image: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       available: true,
       dietary: ["vegetarian"],
       spicy: false
@@ -96,9 +96,33 @@ export function MenuPage() {
       price: 4.99,
       category: "beverages",
       rating: 4.4,
-      image: "https://images.unsplash.com/photo-1723744895523-75a5b52de0eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZm9vZCUyMGRpc2hlc3xlbnwxfHx8fDE3NTg2NDc1MjN8MA&ixlib=rb-4.1.0&q=80&w=400",
+      image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
       available: true,
       dietary: ["vegan"],
+      spicy: false
+    },
+    {
+      id: 7,
+      name: "Caesar Salad",
+      description: "Crisp romaine with parmesan and croutons",
+      price: 14.99,
+      category: "appetizers",
+      rating: 4.3,
+      image: "https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      available: true,
+      dietary: ["vegetarian"],
+      spicy: false
+    },
+    {
+      id: 8,
+      name: "Mango Smoothie",
+      description: "Fresh mango blended with yogurt and honey",
+      price: 7.99,
+      category: "beverages",
+      rating: 4.5,
+      image: "https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      available: true,
+      dietary: ["vegetarian"],
       spicy: false
     }
   ];
@@ -267,7 +291,7 @@ export function MenuPage() {
       {/* Floating Cart Summary */}
       {getTotalCartItems() > 0 && (
         <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
-          <Card className="bg-gradient-teal-orange text-white p-4 shadow-lg">
+          <Card className="bg-gradient-to-r from-green-500 to-green-700 text-white p-4 shadow-lg">
             <div className="flex items-center space-x-4">
               <ShoppingCart className="w-5 h-5" />
               <div className="flex items-center space-x-2">
