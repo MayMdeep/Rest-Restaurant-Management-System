@@ -122,7 +122,7 @@ export default function App() {
                     <span>Staff & Inventory Control</span>
                   </div>
                 </div>
-                <Button className="w-full bg-gradient-teal-orange group-hover:opacity-90 transition-opacity">
+                <Button className="w-full group-hover:bg-primary/90 transition-colors">
                   Enter Admin Dashboard
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
